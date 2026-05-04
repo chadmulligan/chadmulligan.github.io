@@ -85,11 +85,11 @@ header {
 .header-sep { display: none; }
 
 .header-title {
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 500;
   color: var(--text-tertiary);
   white-space: nowrap;
   display: block;
-  margin-top: 2px;
 }
 
 .header-name-block {
