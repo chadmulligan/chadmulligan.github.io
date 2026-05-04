@@ -60,7 +60,7 @@ header {
   min-width: 0;
 }
 
-.header-link { margin-left: auto; }
+.header-link { margin-left: auto; margin-right: 8px; }
 
 .header-avatar {
   width: 88px;
