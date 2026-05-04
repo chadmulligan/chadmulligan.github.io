@@ -1,6 +1,17 @@
 const HEADER_H = 80 + 16;
 const SECTIONS = ['about', 'projects'];
 
+function updateSpacer() {
+  const last = document.getElementById(SECTIONS[SECTIONS.length - 1]);
+  const spacer = document.getElementById('scroll-spacer');
+  if (!last || !spacer) return;
+  const needed = window.innerHeight - last.offsetHeight - HEADER_H;
+  spacer.style.height = Math.max(0, needed) + 'px';
+}
+
+updateSpacer();
+window.addEventListener('resize', updateSpacer);
+
 function setActive(id, pushHash = true) {
   document.querySelectorAll('.side-nav-item').forEach(item => item.classList.remove('active'));
   const navItem = document.querySelector(`.side-nav-item[onclick="scrollToSection('${id}')"]`);
