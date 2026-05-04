@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeremy Isnard</title>
+    <link rel="icon" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <a
+          class="header-link"
+          href="https://github.com/chadmulligan"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub: chadmulligan"
+        >
+          <svg
+            class="header-link-icon"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+            />
+          </svg>
+          <span>chadmulligan</span>
+        </a>
+      </div>
+    </header>
+
+    <div class="page-wrapper">
+      <nav class="side-nav">
+        <button class="side-nav-item active" onclick="scrollToSection('about')">
+          About
+        </button>
+        <button class="side-nav-item" onclick="scrollToSection('projects')">
+          Projects
+        </button>
+      </nav>
+
+      <div class="main-content">
+        <div class="hero" id="about">
+          <div class="hero-row">
+            <img class="avatar" src="me.png" alt="Jeremy Isnard" />
+            <div class="hero-text">
+              <h1>Jeremy Isnard</h1>
+              <p class="hero-about">
+                Product engineer at Unique AI in Bern, currently on MCP.
+              </p>
+            </div>
+          </div>
+          <div class="prose hero-prose">
+            <p>
+              I started in finance — CFA, structured products, the whole
+              serious-young-banker thing. In 2011 I picked up JavaScript on
+              Codecademy and took Odersky's Scala class on Coursera back when
+              MOOCs were still a fresh idea. I kept finding excuses to learn new
+              languages.
+            </p>
+            <p>
+              A pivot to R led to a stint as a research collaborator in
+              statistics and a co-authored paper in the
+              <em>Human Resource Management Journal</em>. Around the same time I
+              started a Master of Advanced Studies in economic crime
+              investigation — antiterrorism specifically — and ended up using R
+              and JavaScript on a Neo4J graph to build a Bitcoin compliance and
+              tracing platform; Neo4J Certified Professional came out of that.
+              That was 2016, when "blockchain forensics" still got blank stares.
+            </p>
+            <p>
+              The platform got me hired as a senior software engineer at a
+              Zurich startup. Salesforce sat at the heart of the product but no
+              engineer wanted to touch it, so I taught myself the platform, made
+              Ranger, picked up AWS Solutions Architect along the way, and a few
+              months later was technical architect — most of our work was
+              integrations into SF.
+            </p>
+            <p>
+              That eventually landed me at a newly-funded Zurich startup called
+              Unique, where I led the integrations team and now run product for
+              the MCP work — which is, of course, mostly integrations. The
+              pattern is hard to miss.
+            </p>
+          </div>
+        </div>
+
+        <div class="section" id="projects">
+          <hr class="divider" />
+          <p class="section-label">Projects</p>
+          <div class="proto-grid">
+            <!-- PROJECTS_START -->
+            <div class="card">
+              <div class="card-top">
+                <div class="card-title">
+                  <a
+                    class="card-link"
+                    href="https://github.com/chadmulligan/chadmulligan.github.io"
+                    target="_blank"
+                    rel="noopener"
+                    >This page</a
+                  >
+                </div>
+                <div class="card-description">
+                  This portfolio. A single page that lists side projects,
+                  generated from meta.json.
+                </div>
+              </div>
+              <div class="card-bottom">
+                <div class="card-left">
+                  <span class="card-date">May 26</span>
+                </div>
+                <div class="card-right"></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-top">
+                <div class="card-title">
+                  <a
+                    class="card-link"
+                    href="https://isnard.dev/vibehuus/"
+                    target="_blank"
+                    rel="noopener"
+                    >Vibehuus</a
+                  >
+                </div>
+                <div class="card-description">
+                  Landing page for a one-day vibecoding event in Bern, rendered
+                  as a stylised Aare river map with flowing particles.
+                </div>
+              </div>
+              <div class="card-bottom">
+                <div class="card-left">
+                  <span class="card-date">May 26</span>
+                </div>
+                <div class="card-right">
+                  <a
+                    class="card-repo"
+                    href="https://github.com/chadmulligan/vibehuus"
+                    target="_blank"
+                    rel="noopener"
+                    >chadmulligan/vibehuus</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-top">
+                <div class="card-title">
+                  <a
+                    class="card-link"
+                    href="https://isnard.dev/gratitude/"
+                    target="_blank"
+                    rel="noopener"
+                    >Mur de gratitude</a
+                  >
+                </div>
+                <div class="card-description">
+                  Mur interactif de cœurs réalisé pour le jubilé d'une paroisse
+                  — chacun y dépose un message.
+                </div>
+              </div>
+              <div class="card-bottom">
+                <div class="card-left">
+                  <span class="card-date">Mar 26</span>
+                </div>
+                <div class="card-right">
+                  <a
+                    class="card-repo"
+                    href="https://github.com/chadmulligan/gratitude"
+                    target="_blank"
+                    rel="noopener"
+                    >chadmulligan/gratitude</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- PROJECTS_END -->
+          </div>
+        </div>
+
+        <div id="scroll-spacer"></div>
+
+        <footer>
+          <span>Jeremy Isnard</span>
+          <a
+            href="https://github.com/chadmulligan"
+            target="_blank"
+            rel="noopener"
+            >github.com/chadmulligan</a
+          >
+        </footer>
+      </div>
+    </div>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>

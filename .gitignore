@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python (gen_cards bytecode)
+__pycache__/
+*.pyc
+
+# Local environment / tooling
+.claude/
+.env
+.env.local

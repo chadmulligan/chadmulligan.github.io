@@ -1,0 +1,24 @@
+{
+  "projects": [
+    {
+      "title": "This page",
+      "description": "This portfolio. A single page that lists side projects, generated from meta.json.",
+      "date": "2026-05",
+      "url": "https://github.com/chadmulligan/chadmulligan.github.io"
+    },
+    {
+      "title": "Vibehuus",
+      "description": "Landing page for a one-day vibecoding event in Bern, rendered as a stylised Aare river map with flowing particles.",
+      "date": "2026-05",
+      "url": "https://isnard.dev/vibehuus/",
+      "repo": "chadmulligan/vibehuus"
+    },
+    {
+      "title": "Mur de gratitude",
+      "description": "Mur interactif de cœurs réalisé pour le jubilé d'une paroisse — chacun y dépose un message.",
+      "date": "2026-03",
+      "url": "https://isnard.dev/gratitude/",
+      "repo": "chadmulligan/gratitude"
+    }
+  ]
+}
